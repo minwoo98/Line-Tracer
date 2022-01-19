@@ -1,0 +1,4 @@
+---- __VARIABLE__ Matches (3 in 2 files) ----
+Main.c (main):#define __VARIABLE__
+Val.h (include):#ifdef	__VARIABLE__
+Val.h (include):	#undef	__VARIABLE__

@@ -1,0 +1,6 @@
+---- g_u16turn_dist Matches (5 in 4 files) ----
+Main.asm (main):DW$36	.dwtag  DW_TAG_variable, DW_AT_name("g_u16turn_dist"), DW_AT_symbol_name("_g_u16turn_dist")
+Sensor.asm (main):DW$18	.dwtag  DW_TAG_variable, DW_AT_name("g_u16turn_dist"), DW_AT_symbol_name("_g_u16turn_dist")
+Sensor.asm (main):;*** 720	-----------------------    (*p_mark).iq17limit_dist = (*p_mark).iq17turnmark_dist+((long)g_u16turn_dist<<17);
+Sensor.c (main):			p_mark->iq17limit_dist = p_mark->iq17turnmark_dist + ( (int32)g_u16turn_dist << 17 );	
+Variable.h (main):__VARIABLE_EXT__ Uint16 g_u16turn_dist;

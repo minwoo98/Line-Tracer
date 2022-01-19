@@ -1,0 +1,61 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectDir="E:\project\tms320f280x\test_board\monitor2808\cs_prj\monitor2808\"
+ProjectType=Executable
+CPUFamily=TMS320C28XX
+Tool="Compiler"
+Tool="CustomBuilder"
+Tool="DspBiosBuilder"
+Tool="Linker"
+Config="Debug"
+Config="Release"
+
+[Source Files]
+Source="..\..\flash\flash.c"
+Source="..\..\main\DSP280x_CodeStartBranch.asm"
+Source="..\..\main\DSP280x_CpuTimers.c"
+Source="..\..\main\DSP280x_DefaultIsr.c"
+Source="..\..\main\DSP280x_GlobalVariableDefs.c"
+Source="..\..\main\DSP280x_Gpio.c"
+Source="..\..\main\DSP280x_MemCopy.c"
+Source="..\..\main\DSP280x_PieCtrl.c"
+Source="..\..\main\DSP280x_PieVect.c"
+Source="..\..\main\DSP280x_Sci.c"
+Source="..\..\main\DSP280x_SysCtrl.c"
+Source="..\..\main\DSP280x_usDelay.asm"
+Source="..\..\main\main.c"
+Source="..\..\main\main.h"
+Source="..\..\main\DSP280x_Headers_nonBIOS.cmd"
+Source="..\..\main\F2808.cmd"
+
+["Compiler" Settings: "Debug"]
+Options=-pm -op0 -o3 -fr"$(Proj_dir)\Debug" -i"E:\project\tms320f280x\test_board\monitor2808\include" -d"_DEBUG" -d"LARGE_MODEL" -mf -ml -v28
+
+["Compiler" Settings: "Release"]
+Options=-o3 -fr"$(Proj_dir)\Release" -d"LARGE_MODEL" -ml -v28
+
+["Linker" Settings: "Debug"]
+Options=-c -ecode_start -farheap0x300 -heap0x01 -m".\Debug\monitor2808.map" -o".\Debug\monitor2808.out" -stack0x300 -w -x -i"C:\CCStudio_v3.1\C2000\cgtools\lib" -l"rts2800_ml.lib" -l"Flash2808_API_V302.lib"
+
+["Linker" Settings: "Release"]
+Options=-c -m".\Release\monitor2808.map" -o".\Release\monitor2808.out" -w -x
+
+["..\..\main\main.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["..\..\main\main.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["..\..\main\DSP280x_Headers_nonBIOS.cmd" Settings: "Debug"]
+LinkOrder=1
+
+["..\..\main\DSP280x_Headers_nonBIOS.cmd" Settings: "Release"]
+LinkOrder=1
+
+["..\..\main\F2808.cmd" Settings: "Debug"]
+LinkOrder=1
+
+["..\..\main\F2808.cmd" Settings: "Release"]
+LinkOrder=1
+

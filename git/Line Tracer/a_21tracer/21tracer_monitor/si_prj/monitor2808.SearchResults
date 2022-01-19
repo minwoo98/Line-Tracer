@@ -1,0 +1,5 @@
+---- Motor_PID_ISR Matches (4 in 3 files) ----
+DSP280x_CpuTimers.c (c:\work\final_varhae_08\monitor2808\main): 	PieVectTable.XINT13 = &Motor_PID_ISR; // Motor interrupt
+Main.c (c:\work\final_varhae_08\monitor2808\main):#pragma CODE_SECTION(Motor_PID_ISR,"ramfuncs2");
+Main.c (c:\work\final_varhae_08\monitor2808\main):interrupt void Motor_PID_ISR(void)
+Main.h (c:\work\final_varhae_08\monitor2808\main):interrupt void Motor_PID_ISR(void);

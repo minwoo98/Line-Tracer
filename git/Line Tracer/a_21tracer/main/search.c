@@ -48,8 +48,8 @@ void Run_Init(void)
 
 	g_q15cross_dist = _IQ15( 0.0 );
 
-	//g_float_time = ( float32 )0.0;	
-	//g_u16_turnmark_cnt = 0;
+	g_float_time = ( float32 )0.0;	
+	g_u16_turnmark_cnt = 0;
 	g_int32lineout_cnt = 0;
 	//g_int32speed_up_cnt = 0;
 
@@ -59,12 +59,13 @@ void Run_Init(void)
 }
 
 void Start_end()
-{	TxPrintf("TEST4 \n");
+{
 	if( !g_flag.run_start_flag )
-	{
+	{	
+		g_time_cnt = 0;
 		g_flag.run_start_flag = ON;
-		VFDPrintf("START   ");
-		//g_time_cnt = 0;
+		//VFDPrintf("START   ");
+
 	}									
 	else			
 	{	
@@ -106,7 +107,7 @@ int race_stop_check( void )
 		MOTOR_OFF;
 		while(1)
 		{
-			//VFDPrintf("%4u%4u", g_u16_turnmark_cnt, g_u16_cross_cnt);
+			VFDPrintf("%4u", g_u16_turnmark_cnt);
 			if(!SW_D)
 			{
 				//Line_info(NULL);
@@ -119,7 +120,7 @@ int race_stop_check( void )
 		}
 		while(1)
 		{
-			//VFDPrintf("T %3lf", g_float_time);
+			VFDPrintf("T %3lf", g_float_time);
 		}
 	}
 	return 0;

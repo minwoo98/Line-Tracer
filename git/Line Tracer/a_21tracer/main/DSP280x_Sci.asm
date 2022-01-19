@@ -1,6 +1,6 @@
 ;***************************************************************
 ;* TMS320C2000 C/C++ Codegen                         PC v4.1.3 *
-;* Date/Time created: Wed Jan 19 16:58:01 2022                 *
+;* Date/Time created: Wed Jan 19 18:02:52 2022                 *
 ;***************************************************************
 	.compiler_opts --mem_model:code=flat --mem_model:data=large --silicon_version=28 
 FP	.set	XAR2
@@ -24,8 +24,8 @@ DW$5	.dwtag  DW_TAG_variable, DW_AT_name("SciaRegs"), DW_AT_symbol_name("_SciaRe
 	.dwattr DW$5, DW_AT_declaration(0x01)
 	.dwattr DW$5, DW_AT_external(0x01)
 _Buff$1$0:	.usect	".ebss",128,1,0
-;	..\Compiler\bin\opt2000.exe C:\Users\agdll\AppData\Local\Temp\TI18010 C:\Users\agdll\AppData\Local\Temp\TI1804 
-;	..\Compiler\bin\ac2000.exe --keep_unneeded_types -D_INLINE -DLARGE_MODEL -I..\include --version=28 --keep_unneeded_types --mem_model:code=flat --mem_model:data=large -m --i_output_file C:\Users\agdll\AppData\Local\Temp\TI1802 --template_info_file C:\Users\agdll\AppData\Local\Temp\TI1806 --object_file DSP280x_Sci.obj --embed_opts 10 --call_assumptions=0 --mem_model:code=flat --mem_model:data=large --opt_for_speed --opt_level=3 --optimizer_comments --optimizer_interlist --program_level_compile 
+;	..\Compiler\bin\opt2000.exe C:\Users\agdll\AppData\Local\Temp\TI82410 C:\Users\agdll\AppData\Local\Temp\TI8244 
+;	..\Compiler\bin\ac2000.exe --keep_unneeded_types -D_INLINE -DLARGE_MODEL -I..\include --version=28 --keep_unneeded_types --mem_model:code=flat --mem_model:data=large -m --i_output_file C:\Users\agdll\AppData\Local\Temp\TI8242 --template_info_file C:\Users\agdll\AppData\Local\Temp\TI8246 --object_file DSP280x_Sci.obj --embed_opts 10 --call_assumptions=0 --mem_model:code=flat --mem_model:data=large --opt_for_speed --opt_level=3 --optimizer_comments --optimizer_interlist --program_level_compile 
 	.sect	".text"
 	.global	_SCIx_TxChar
 
@@ -86,7 +86,7 @@ DW$L$_SCIx_TxChar$2$E:
         ; return occurs
 
 DW$9	.dwtag  DW_TAG_loop
-	.dwattr DW$9, DW_AT_name("C:\a_21tracer\main\DSP280x_Sci.asm:L1:1:1642579081")
+	.dwattr DW$9, DW_AT_name("C:\a_21tracer\main\DSP280x_Sci.asm:L1:1:1642582972")
 	.dwattr DW$9, DW_AT_begin_file("DSP280x_Sci.c")
 	.dwattr DW$9, DW_AT_begin_line(0x4f)
 	.dwattr DW$9, DW_AT_end_line(0x4f)
@@ -218,7 +218,7 @@ L6:
         ; return occurs
 
 DW$16	.dwtag  DW_TAG_loop
-	.dwattr DW$16, DW_AT_name("C:\a_21tracer\main\DSP280x_Sci.asm:L2:1:1642579081")
+	.dwattr DW$16, DW_AT_name("C:\a_21tracer\main\DSP280x_Sci.asm:L2:1:1642582972")
 	.dwattr DW$16, DW_AT_begin_file("DSP280x_Sci.c")
 	.dwattr DW$16, DW_AT_begin_line(0x50)
 	.dwattr DW$16, DW_AT_end_line(0x5c)
@@ -236,7 +236,7 @@ DW$20	.dwtag  DW_TAG_loop_range
 	.dwattr DW$20, DW_AT_high_pc(DW$L$_SCIx_TxString$7$E)
 
 DW$21	.dwtag  DW_TAG_loop
-	.dwattr DW$21, DW_AT_name("C:\a_21tracer\main\DSP280x_Sci.asm:L3:2:1642579081")
+	.dwattr DW$21, DW_AT_name("C:\a_21tracer\main\DSP280x_Sci.asm:L3:2:1642582972")
 	.dwattr DW$21, DW_AT_begin_file("DSP280x_Sci.c")
 	.dwattr DW$21, DW_AT_begin_line(0x4f)
 	.dwattr DW$21, DW_AT_end_line(0x57)
@@ -247,7 +247,7 @@ DW$22	.dwtag  DW_TAG_loop_range
 
 
 DW$23	.dwtag  DW_TAG_loop
-	.dwattr DW$23, DW_AT_name("C:\a_21tracer\main\DSP280x_Sci.asm:L5:2:1642579081")
+	.dwattr DW$23, DW_AT_name("C:\a_21tracer\main\DSP280x_Sci.asm:L5:2:1642582972")
 	.dwattr DW$23, DW_AT_begin_file("DSP280x_Sci.c")
 	.dwattr DW$23, DW_AT_begin_line(0x4f)
 	.dwattr DW$23, DW_AT_end_line(0x5b)
@@ -394,7 +394,7 @@ DW$L$_SCIx_RxChar$2$E:
         ; return occurs
 
 DW$31	.dwtag  DW_TAG_loop
-	.dwattr DW$31, DW_AT_name("C:\a_21tracer\main\DSP280x_Sci.asm:L7:1:1642579081")
+	.dwattr DW$31, DW_AT_name("C:\a_21tracer\main\DSP280x_Sci.asm:L7:1:1642582972")
 	.dwattr DW$31, DW_AT_begin_file("DSP280x_Sci.c")
 	.dwattr DW$31, DW_AT_begin_line(0x47)
 	.dwattr DW$31, DW_AT_end_line(0x47)

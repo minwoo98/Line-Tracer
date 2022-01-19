@@ -149,7 +149,7 @@ void move_to_end( volatile _iq17 dist, volatile _iq17 vel, volatile int32 acc )
 
 	g_flag.move_state = OFF;
 
-	//g_float_time = ( float32 )g_time_cnt * ( float32 )0.000030;
+	g_float_time = ( float32 )g_time_cnt * ( float32 )0.000025;
 
 	StartCpuTimer2();
 

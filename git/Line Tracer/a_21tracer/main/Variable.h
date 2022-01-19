@@ -29,6 +29,8 @@
 #define SW_U GpioDataRegs.GPADAT.bit.GPIO25
 #define SW_R GpioDataRegs.GPADAT.bit.GPIO31
 
+//#define LEFT_LED_ON (GpioDataRegs.GPASET.bit.GPIO20 = 1)
+//#define LEFT_LED2_ON (GpioDataRegs.GPASET.bit.GPIO21 = 1)
 
 #define L_MOTOR 	GpioDataRegs.GPADAT.all = (( GpioDataRegs.GPADAT.all & 0xffff0fff )| g_left_step[++g_u16_leftstep & 0x3])
 #define R_MOTOR 	GpioDataRegs.GPADAT.all = (( GpioDataRegs.GPADAT.all & 0xfffff0ff )| g_right_step[++g_u16_rightstep & 0x3])
@@ -69,3 +71,6 @@ __VARIABLE_EXT__ Uint16 g_u16turn_dist;
 
 __VARIABLE_EXT__ int32 g_mot_isr_cnt;
 __VARIABLE_EXT__ int32 g_end_accel;
+
+__VARIABLE_EXT__ int32 g_time_cnt;
+__VARIABLE_EXT__ float32 g_float_time;

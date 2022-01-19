@@ -56,17 +56,19 @@ void Variable_Init( void )
 
 	g_flag.Motor_flag = OFF; ////////////////////// chang
 
-	g_IQ_handle_acc = _IQ17(0.0000292);			
-	g_IQ_handle_dec = _IQ17(0.000210);				
-	g_u16handle_acc = 292;	//must mpy 0.0000001
-	g_u16handle_dec = 210;	//must mpy 0.000001
+	g_IQ_handle_acc = _IQ17(0.0000300);			
+	g_IQ_handle_dec = _IQ17(0.000225);				
+	g_u16handle_acc = 300;	//must mpy 0.0000001
+	g_u16handle_dec = 225;	//must mpy 0.000001
 
 	g_flag.line_out = OFF;
 	g_mot_isr_cnt = 0;
 	g_int32lineout_cnt = 0;
 
 	g_u16turn_dist = 60;
-	
+
+	g_float_time = 0;
+	g_time_cnt = 0;
 	load_maxmin_rom();
 	sensor_weight();
 	load_maxmin_rom();

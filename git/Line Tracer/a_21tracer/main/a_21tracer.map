@@ -18,12 +18,12 @@ OUTPUT TRANSLATION MAP
    OUTPUT FILES: a_21tracer.hex [b0..b15]
 
    CONTENTS: 003e8000..003e8001   codestart Data Width=2   
-             003e8002..003ea5a6   .text Data Width=2   
-             003ea5a8..003ea964   .econst Data Width=2   
-             003ea965..003eabe4   VFD_FONT Data Width=2   
-             003eabe5..003ead0f   IQmath Data Width=2   
-             003ead10..003ead83   .cinit Data Width=2   
-             003ead84..003eada6   ramfuncs Data Width=2   
+             003e8002..003ea5f5   .text Data Width=2   
+             003ea5f6..003ea9ac   .econst Data Width=2   
+             003ea9ad..003eac2c   VFD_FONT Data Width=2   
+             003eac2d..003ead57   IQmath Data Width=2   
+             003ead58..003eadcb   .cinit Data Width=2   
+             003eadcc..003eadee   ramfuncs Data Width=2   
 
 --------------------------------------------------------------------------------
 00000000..003fffff  Page=1  Memory Width=16  ROM Width=16  "*DEFAULT PAGE 1*"

@@ -125,14 +125,14 @@ interrupt void sensor_ISR()
 		AdcRegs.ADCTRL2.bit.SOC_SEQ1 = 1; // ADC interrupt start
 	}
 }
-
 interrupt void adc_ISR()
 {
 	 int32 adc_result_0 = 0;
 	 int32 adc_result_1 = 0;
 
 	PieCtrlRegs.PIEACK.all = PIEACK_GROUP1;
-	
+
+	g_time_cnt++;
 	g_mot_isr_cnt++;
 
 	GpioDataRegs.GPACLEAR.all= sensor_prog[sensor_cnt_16];

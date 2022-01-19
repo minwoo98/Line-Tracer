@@ -141,8 +141,8 @@ void InitGpio(void)
 	GpioCtrlRegs.GPADIR.bit.GPIO18 = 1;
 	GpioCtrlRegs.GPADIR.bit.GPIO19 = 1;
 
-	GpioCtrlRegs.GPADIR.bit.GPIO20 = 0;
-	GpioCtrlRegs.GPADIR.bit.GPIO21 = 0;
+	GpioCtrlRegs.GPADIR.bit.GPIO20 = 1;
+	GpioCtrlRegs.GPADIR.bit.GPIO21 = 1;
 	GpioCtrlRegs.GPADIR.bit.GPIO22 = 1;
 	GpioCtrlRegs.GPADIR.bit.GPIO23 = 1;
 
@@ -155,8 +155,8 @@ void InitGpio(void)
 	GpioCtrlRegs.GPADIR.bit.GPIO29 = 1;
 	GpioCtrlRegs.GPADIR.bit.GPIO30 = 0;
 	GpioCtrlRegs.GPADIR.bit.GPIO31 = 0;
-*/	// 0010 1100 1100 1101 1111 1111 1111 1111
-	GpioCtrlRegs.GPADIR.all = 0x2ccdffff;
+*/	// 0010 1100 1111 1101 1111 1111 1111 1111
+	GpioCtrlRegs.GPADIR.all = 0x2cfdffff;
 
 	
 

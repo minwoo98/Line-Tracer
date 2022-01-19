@@ -1,3 +1,3 @@
 # Line-Tracer
-Step Line Tracer project based on embedded systems
-https://user-images.githubusercontent.com/76464662/150125462-0d792066-6d70-4f64-b865-3299e79250d6.mp4
+<라인 트레이서 1차 주행 영상>
+![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/76464662/150126401-7ce49037-7a3d-4bf6-bcf0-d5b225ae79ca.gif)
